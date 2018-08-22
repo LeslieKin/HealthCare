@@ -1,0 +1,80 @@
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical" >
+
+  <!-- 标题栏  -->
+  <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_title_repeat" >
+
+    <Button android:id="@+id/button_title_back"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@drawable/button_title_back_selector" />
+  
+    <TextView android:id="@+id/textview_title_name"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerInParent="true"
+      android:text="@string/register"
+      style="@style/text_title_common" />
+
+  </RelativeLayout>
+
+  <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/page_login" >
+
+    <RelativeLayout 
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+      <!-- 手机号码编辑栏 -->
+      <EditText android:id="@+id/edittext_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/edit_text_common"
+        android:background="@drawable/bg_frame_edit_text_info"
+        android:drawableLeft="@drawable/icon_phone"
+        android:hint="@string/phone_number"
+        android:inputType="phone"
+        android:maxLength="@string/length_phone" />
+
+      <!-- 快捷删除按钮 -->
+      <include layout="@layout/include_button_fast_delete" 
+        android:id="@+id/button_delete_phone_number"/>
+    </RelativeLayout>
+
+    <LinearLayout 
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" >
+
+      <!-- 易检康用户协议确认 -->
+      <CheckBox android:id="@+id/checkbox_register_agreement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/check_box_common"
+        android:checked="true"
+        android:text="@string/agree" />
+
+      <!-- 协议链接 -->
+      <TextView android:id="@+id/textview_register_agreement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_link_common"
+        android:text="@string/user_agreement" /> 
+    </LinearLayout>
+
+    <!-- 下一步按钮 -->
+    <Button android:id="@+id/button_next_step"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      style="@style/button_big_sign_in"
+      android:enabled="false"
+      android:text="@string/next_step" />
+  </LinearLayout>
+</LinearLayout>
+  

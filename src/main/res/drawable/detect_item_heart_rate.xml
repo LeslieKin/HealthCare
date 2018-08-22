@@ -1,0 +1,7 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+  <item android:state_enabled="false" android:drawable="@drawable/ic_heart_rate_disabled"></item>
+  <item android:state_pressed="true" android:drawable="@drawable/ic_heart_rate_pressed"></item>
+  <item android:state_focused="true" android:drawable="@drawable/ic_heart_rate_pressed"></item>
+  <item android:state_checked="true" android:drawable="@drawable/ic_heart_rate_pressed"></item>
+  <item android:drawable="@drawable/ic_heart_rate"></item>
+</selector>

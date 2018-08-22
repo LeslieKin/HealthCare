@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <dimen name="width_dialog_confirm"  >320dp</dimen>
+  <dimen name="width_dialog_loading"  >200dp</dimen>
+  <dimen name="height_dialog_confirm" >200dp</dimen>
+  <dimen name="height_dialog_loading" >85dp</dimen>
+  <dimen name="ts_dialog_confirm_content">17dp</dimen>
+  <dimen name="ts_common_login" >18sp</dimen>
+  <dimen name="ts_dialog_confirm_button">18sp</dimen>
+  <dimen name="ts_tip_fill_in_vericode">16sp</dimen>
+  <dimen name="ts_send_vericode_again_button">17sp</dimen>
+</resources>

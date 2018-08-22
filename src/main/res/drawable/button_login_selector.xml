@@ -1,0 +1,7 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:state_focused="true" android:drawable="@drawable/bg_button_login_pressed"></item>
+  <item android:state_pressed="true" android:drawable="@drawable/bg_button_login_pressed"></item>
+  <item android:state_enabled="true"  android:drawable="@drawable/bg_button_login"></item>
+  <item android:state_enabled="false" android:drawable="@drawable/bg_button_login_disabled"></item>
+  <item android:drawable="@drawable/bg_button_login"></item>
+</selector>

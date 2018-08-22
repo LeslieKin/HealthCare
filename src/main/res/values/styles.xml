@@ -1,0 +1,213 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+  -->
+  <style name="AppBaseTheme" parent="@android:style/Theme.Light.NoTitleBar">
+    <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.    -->
+  </style>
+  
+  
+ <style name="FullscreenDialog" parent="AppTheme">
+    <item name="android:windowBackground">@android:color/transparent</item>
+  </style>
+  
+ 
+  <!-- Application theme. -->
+  <style name="AppTheme" parent="AppBaseTheme">
+    <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+  </style>
+
+  <style name="main_tab">
+    <item name="android:textSize">@dimen/ts_main_tab</item>
+    <item name="android:textColor">@drawable/text_color_grey_green_selector</item>
+    <item name="android:paddingTop">@dimen/top_padding_main_tab</item>
+    <item name="android:paddingBottom">@dimen/bottom_padding_main_tab</item>
+    <item name="android:button">@null</item>
+    <item name="android:gravity">center_horizontal|bottom</item>
+    <item name="android:layout_width">0dp</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_weight">1.0</item>
+    <item name="android:background">@drawable/button_main_tab_selector</item>
+  </style>
+
+  <style name="text_title_common">
+    <item name="android:textColor">@android:color/white</item>
+    <item name="android:textSize">@dimen/ts_title_common</item>
+    <item name="android:paddingBottom">@dimen/bottom_padding_shadow</item>
+  </style>
+
+  <style name="page_login">
+    <item name="android:orientation">vertical</item>
+    <item name="android:paddingLeft">@dimen/h_padding_activity_common</item>
+    <item name="android:paddingRight">@dimen/h_padding_activity_common</item>
+    <item name="android:paddingTop">@dimen/v_padding_activity_common</item>
+    <item name="android:paddingBottom">@dimen/v_padding_activity_common</item>
+    <item name="android:background">@color/theme</item>
+  </style>
+
+  <style name="edit_text_common">
+    <item name="android:gravity">center_vertical</item>
+    <item name="android:singleLine">true</item>
+    <item name="android:paddingLeft">@dimen/h_padding_exit_text</item>
+    <item name="android:drawablePadding">@dimen/drawable_padding_exit_text</item>
+    <item name="android:textSize">@dimen/ts_common_login</item>
+    <item name="android:textColor">@color/page_common_text</item>
+    <item name="android:textColorHint">@color/hint</item>
+  </style>
+
+  <style name="button_delete_info">
+    <item name="android:layout_centerVertical">true</item>
+    <item name="android:background">@drawable/bg_button_delete_info</item>
+    <item name="android:visibility">invisible</item>
+  </style>
+
+  <style name="check_box_common">
+    <item name="android:textSize">@dimen/ts_common_login</item>
+    <item name="android:textColor">@color/page_common_text</item>
+    <item name="android:paddingLeft">@dimen/left_padding_check_box</item>
+    <item name="android:paddingTop">@dimen/v_padding_check_box</item>
+    <item name="android:paddingBottom">@dimen/v_padding_check_box</item>
+    <item name="android:background">@null</item>
+    <item name="android:checked">false</item>
+    <item name="android:button">@drawable/checkbox_remember_password</item>
+  </style>
+
+  <style name="text_link_common">
+    <item name="android:textSize">@dimen/ts_common_login</item>
+    <item name="android:textColor">@color/link</item>
+  </style>
+
+  <style name="text_content_common">
+    <item name="android:textSize">@dimen/ts_common_login</item>
+    <item name="android:textColor">@color/page_common_text</item>
+  </style>
+
+  <style name="button_big_sign_in">
+    <item name="android:background">@drawable/button_login_selector</item>
+    <item name="android:textColor">@drawable/text_color_big_button_login</item>
+    <item name="android:textSize">@dimen/ts_big_button_login</item>
+  </style>
+
+  <style name="Loading_Dialog" parent="android:Theme.Light.NoTitleBar">
+    <item name="android:windowBackground">@android:color/transparent</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowIsFloating">true</item>
+    <item name="android:windowFrame">@null</item>
+  </style>
+
+  <style name="dialog_confirm" parent="android:Theme.Dialog">
+    <item name="android:windowBackground">@android:color/transparent</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowIsFloating">true</item>
+    <item name="android:windowFrame">@null</item>
+  </style>
+
+  <!-- Dialog style -->
+  <style name="Dialog" parent="android:Theme.Dialog">
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowIsFloating">true</item>
+    <item name="android:windowFrame"     >@null</item>
+    <item name="android:windowBackground">@android:color/transparent</item>
+    <item name="android:backgroundDimEnabled">false</item>
+  </style>
+  
+  <style name="dialog_page_title">
+    <item name="android:textSize">@dimen/ts_dialog_page_title</item>
+    <item name="android:textColor">@color/dialog_page_title</item>
+    <item name="android:minHeight">@dimen/min_height_dialog_page_title</item>
+    <item name="android:gravity">center_vertical</item>
+    <item name="android:paddingLeft">@dimen/left_padding_dialog_page_title</item>
+    <item name="android:drawableLeft">@drawable/ic_back_arrow</item>
+    <item name="android:drawablePadding">@dimen/drawable_padding_dialog_page_title</item>
+  </style>
+  
+  
+   <style name="nav_title">
+    <item name="android:gravity">center</item>
+    <item name="android:textSize">@dimen/ts_nav_title</item>
+    <item name="android:textColor">@color/nav_title</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+   <!--<style name="minus_shadow.Light">
+    <item name="android:shadowColor">@color/opacity_10</item>
+   </style>
+    <style name="minus_shadow">
+    <item name="android:shadowDx">1</item>
+    <item name="android:shadowDy">1</item>
+    <item name="android:shadowRadius">1</item>
+  </style>   -->
+  
+     <!-- ### Detect Ready Page styles :start -->
+ 
+  <style name="page_detect_bt_start" >
+    <item name="android:background">@drawable/page_detect_bt_start</item>
+  </style>
+  
+  <style name="page_detect_bt_save_result" >
+    <item name="android:background">@drawable/page_detect_bt_save_result</item>
+  </style>
+ 
+   <style name="grid_text" parent="minus_shadow.Light">
+    <item name="android:textSize">@dimen/ts_state_text</item>
+    <item name="android:textColor">@color/state_text</item>
+    <item name="android:gravity">center</item>
+  </style>
+  
+
+  <style name="FullScreenDialog" parent="AppTheme"></style>
+
+    <!-- ### Animation style :start -->
+  <style name="anim_right_slide_in" parent="android:Animation">
+    <item name="@android:windowEnterAnimation">@anim/slide_in_t_left</item>
+    <item name="@android:windowExitAnimation">@anim/slide_out_t_left</item>
+  </style>
+  <!-- ### Animation style :end -->
+ 
+  <style name="item_details_nav">
+    <item name="android:gravity">center</item>
+    <item name="android:button">@null</item>
+    <item name="android:background">@drawable/radio_button_details</item>
+    <item name="android:textColor">@drawable/text_color_item_details_nav</item>
+    <item name="android:paddingTop">6dp</item>
+    <item name="android:paddingBottom">6dp</item>
+  </style>
+  
+
+     <style name="minus_shadow">
+    <item name="android:shadowDx">1</item>
+    <item name="android:shadowDy">1</item>
+    <item name="android:shadowRadius">1</item>
+  </style>
+
+  <style name="minus_shadow.Light">
+    <item name="android:shadowColor">@color/opacity_10</item>
+  </style>
+  
+  
+ <!--  测量style -->
+  <style name="Widget"/>
+  <style name="Widget.MeasureResult"/>
+
+  <style name="Widget.MeasureResult.Text" parent="@style/grid_text">
+    <item name="android:textSize">32sp</item>
+  </style>
+
+  <style name="Widget.MeasureResult.Text.Label">
+    <item name="android:minWidth">100dp</item>
+    <item name="android:gravity">left</item>
+  </style>
+
+  <style name="Widget.MeasureResult.Text.Title">
+    <item name="android:textSize">48sp</item>
+  </style>
+
+  <style name="Widget.MeasureResult.Text.NewLine">
+    <item name="android:layout_marginTop">16dp</item>
+  </style>
+
+</resources>

@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/theme"
+  android:orientation="vertical" >
+
+  <!-- 标题栏 -->
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_title_repeat" >
+
+    <Button
+      android:id="@+id/button_title_back"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@drawable/button_title_back_selector" />
+
+    <TextView
+      android:id="@+id/textview_title_name"
+      style="@style/text_title_common"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerInParent="true"
+      android:text="@string/aid_place" />
+  </RelativeLayout>
+  
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none"
+    android:paddingRight="@dimen/h_padding_activity_common"
+    android:paddingLeft="@dimen/h_padding_activity_common"
+    android:paddingTop="@dimen/v_padding_activity_common"
+    android:paddingBottom="@dimen/v_padding_activity_common" >
+
+    <TextView
+      android:id="@+id/textview_content"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:textColor="@color/page_main_text"
+      android:lineSpacingExtra="1.5dp"
+      android:textSize="16sp" />
+  </ScrollView>
+
+</LinearLayout>

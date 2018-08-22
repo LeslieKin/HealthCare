@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/theme"
+  android:orientation="vertical" >
+
+  <!-- 标题栏 -->
+
+  <RelativeLayout
+    android:id="@+id/layout_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_main_title"
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/v_padding_fragment"
+    android:paddingRight="@dimen/v_padding_fragment" >
+
+    <TextView
+      android:id="@+id/textview_title_name"
+      style="@style/text_title_common"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:text="@string/detect" />
+  </RelativeLayout>
+
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_tips_bar" >
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:paddingBottom="@dimen/bottom_padding_shadow"
+      android:layout_centerInParent="true"
+      android:textSize="@dimen/ts_tip_detect"
+      android:textColor="@color/page_main_text"
+      android:text="@string/select_detect" />
+
+  </RelativeLayout>
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="16dp" >
+
+    <GridView
+      android:id="@+id/gridView_detect_item"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:listSelector="@android:color/transparent"
+      android:numColumns="2"
+      android:orientation="vertical"
+      android:scrollbarAlwaysDrawVerticalTrack="true"
+      android:verticalSpacing="12dp" >
+    </GridView>
+
+  </RelativeLayout>
+
+</LinearLayout>

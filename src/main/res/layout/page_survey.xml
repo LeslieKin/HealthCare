@@ -1,0 +1,131 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/theme"
+  android:orientation="vertical" >
+
+  <!-- 标题栏 -->
+
+  <RelativeLayout
+    android:id="@+id/layout_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_main_title"
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/v_padding_fragment"
+    android:paddingRight="@dimen/v_padding_fragment" >
+
+    <TextView
+      android:id="@+id/textview_title_name"
+      style="@style/text_title_common"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:text="@string/survey" />
+  </RelativeLayout>
+
+  <!-- 综合健康指数 -->
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_survey_main"
+    android:baselineAligned="false"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_weight="1.0"
+      android:gravity="center" >
+
+      <RelativeLayout
+        android:layout_width="@dimen/width_height_composite_score"
+        android:layout_height="@dimen/width_height_composite_score"
+        android:background="@drawable/bg_composite_score_board" >
+
+        <project.healthcare.phone.ui.widget.CompositeScoreBoardView
+          android:id="@+id/composite_score_board"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_margin="@dimen/inner_margin_composite_score_board" />
+
+        <!-- 分数圆环扇形视图前景 -->
+
+        <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:background="@drawable/fg_composite_score_board" />
+
+        <!-- 综合分数 -->
+
+        <TextView
+          android:id="@+id/text_composite_score"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:textSize="@dimen/ts_composite_score" />
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/text_composite_score"
+          android:layout_centerHorizontal="true"
+          android:text="@string/composite_healthcare_score"
+          android:textColor="@color/page_main_text"
+          android:textSize="@dimen/ts_composite_score_label" />
+      </RelativeLayout>
+    </LinearLayout>
+    <!-- 分数评价&最后一次提醒时间&立即体检 -->
+
+    <RelativeLayout
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_weight="1.5"
+      android:gravity="center_vertical" >
+
+      <TextView
+        android:id="@+id/text_view_total_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_default_total_comment"
+        android:textColor="@color/page_main_text"
+        android:textSize="@dimen/ts_survey_advise" />
+
+      <TextView
+        android:id="@+id/text_view_last_detect_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_total_comment"
+        android:paddingBottom="@dimen/bottom_padding_text_detect_now"
+        android:paddingTop="@dimen/top_padding_text_detect_now"
+        android:text="@string/text_default_last_detect_time"
+        android:textColor="@color/page_common_text"
+        android:textSize="@dimen/ts_tips" />
+<!-- 立刻体检 -->
+      <Button
+        android:id="@+id/button_detect_now"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/text_view_last_detect_time"
+        android:layout_below="@+id/text_view_last_detect_time"
+        android:layout_marginRight="@dimen/right_margin_detect_button"
+        android:background="@drawable/button_detect_now_selector"
+        android:text="@string/text_detect_now"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/ts_detect_now" />
+    </RelativeLayout>
+  </LinearLayout>
+
+  <ListView
+      android:id="@+id/list_item_survey"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="60dp"
+      android:divider="@null"
+      android:dividerHeight="0.0dp"
+      android:overScrollMode="never"
+      android:scrollbars="none"/>
+
+</LinearLayout>

@@ -1,0 +1,139 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  style="@style/page_login"
+  android:gravity="center_horizontal" >
+
+  <!-- 顶部手机号登录按钮 -->
+  <Button android:id="@+id/button_login_by_phone"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right"
+    android:paddingLeft="@dimen/h_padding_button_login_by_phone"
+    android:paddingRight="@dimen/h_padding_button_login_by_phone"
+    android:background="@drawable/button_login_by_phone_selector"
+    android:text="@string/text_login_by_phone"
+    android:textColor="@color/link"
+    android:textSize="@dimen/ts_button_login_by_phone" />
+
+  <!-- 项目图标 -->
+  <ImageView 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/h_padding_icon_project"
+    android:paddingBottom="@dimen/h_padding_icon_project"
+    android:src="@drawable/icon_project"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:contentDescription="@string/app_name" />
+
+  <!-- 身份证号编辑栏 -->
+  <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <!-- 身份证号 -->  
+    <EditText android:id="@+id/edittext_identity"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      style="@style/edit_text_common"
+      android:background="@drawable/bg_frame_edit_text_identity" 
+      android:drawableLeft="@drawable/icon_user"
+      android:inputType="number"
+      android:digits="@string/digits_identity"
+      android:maxLength="@string/length_identity"
+      android:hint="@string/identity" />
+
+    <!-- 清空身份证按钮 -->
+    <LinearLayout android:id="@+id/button_delete_identity"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_toLeftOf="@+id/check_box_shift_identity"
+      style="@style/button_delete_info"
+      android:orientation="vertical" />
+
+    <!-- 切换身份证 -->
+    <CheckBox android:id="@+id/check_box_shift_identity"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentRight="true"
+      android:layout_centerVertical="true"
+      android:button="@drawable/checkbox_shift_identity"
+      android:checked="false" />
+  </RelativeLayout>
+
+  <!-- 密码编辑栏 -->
+  <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <!-- 登录密码 -->
+    <EditText android:id="@+id/edittext_password"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      style="@style/edit_text_common"
+      android:background="@drawable/bg_frame_edit_text_password"
+      android:drawableLeft="@drawable/icon_password"
+      android:maxLength="@string/max_length_password"
+      android:digits="@string/digits_password"
+      android:inputType="textPassword"
+      android:hint="@string/password" />
+
+    <!-- 清空密码按钮 -->
+    <include layout="@layout/include_button_fast_delete" 
+      android:id="@+id/button_delete_password"/>
+  </RelativeLayout>
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <!-- 记住密码 -->
+    <CheckBox android:id="@+id/checkbox_remember_password"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:checked="true"
+      style="@style/check_box_common"
+      android:text="@string/remember_password" />
+
+    <!-- 忘记密码链接 -->
+    <TextView android:id="@+id/textview_forget_password"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentRight="true"
+      android:layout_centerVertical="true"
+      style="@style/text_link_common"
+      android:text="@string/forget_password" />
+  </RelativeLayout>
+
+  <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- 登录 -->
+    <Button android:id="@+id/button_login"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      style="@style/button_big_sign_in"
+      android:text="@string/login" />
+
+    <!-- 注册文本 -->
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_above="@+id/button_register"
+      android:layout_centerHorizontal="true"
+      style="@style/text_content_common"
+      android:text="@string/register_tip" />
+
+    <!-- 注册 -->
+    <Button android:id="@+id/button_register"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:background="@drawable/button_register_selector"
+      android:text="@string/register"
+      android:textColor="@color/link"
+      android:textSize="@dimen/ts_big_button_login" />
+  </RelativeLayout>   
+</LinearLayout>

@@ -1,0 +1,29 @@
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:gravity="center_horizontal"
+  android:background="@drawable/bg_dialog_confirm"
+  android:orientation="vertical" >
+
+  <TextView android:id="@+id/textview_register_result"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:paddingBottom="50dp"
+    android:textSize="@dimen/ts_dialog_confirm_content"
+    android:textColor="@color/page_common_text"
+    android:text="@string/register_success" />
+
+  <Button android:id="@+id/button_dialog_confirm"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/textview_register_result"
+    android:layout_alignRight="@+id/textview_register_result"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="@dimen/h_padding_dialog_button"
+    style="@style/text_content_common"
+    android:background="@drawable/button_dialog_confirm_selector"
+    android:textColor="@android:color/white"
+    android:text="@string/login" />
+
+</RelativeLayout>

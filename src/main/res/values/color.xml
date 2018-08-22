@@ -1,0 +1,73 @@
+<resources>
+     <color name="black">#000000</color>
+     <color name="dialog_page_title">#333333</color>
+    
+    
+    
+  <color name="bg_page_content">#fdfded</color>
+  <color name="bg_record_page_title">#ebebeb</color>
+  <color name="bg_data_load_page">#66475f17</color>
+  <color name="operation_title">#3f3f3f</color>
+  <color name="operation_content">#3f3f3f</color>
+  <color name="detect_item_title">#464646</color>
+  <color name="measure_value">#afafaf</color>
+  <color name="white">#ffffff</color>
+  <color name="bg_list_two">#f5f5f5</color>
+  <color name="play_button_disabled">@color/white</color>
+  <color name="play_button">#f0ffea</color>
+  <color name="state_text">#ff360e</color>
+  <color name="nav_button_disabled">#f1f1f1</color>
+  <color name="nav_button_pressed">@color/white</color>
+  <color name="nav_button">#daffab</color>
+    <color name="opacity_10">#1a000000</color>
+    <color name="result_comment">#3f3f3f</color>
+    <color name="result_state">#3f3f3f</color>
+    <color name="nav_title">#68b430</color>
+  <color name="nav_button_special">#def5ff</color>
+
+  <color name="theme">#E5F1E3</color>
+  <color name="link">#75cd59</color>
+  <color name="page_main_text">#656565</color>
+  <color name="page_common_text">#929292</color>
+  <color name="page_main_text_disable">#999999</color>
+  <color name="page_common_text_disable">#b6b6b6</color>
+  <color name="hint">#D6D6D6</color>
+  <color name="composite_board_fine">#54d254</color>
+  <color name="composite_board_normal">#e0ec30</color>
+  <color name="composite_board_poor">#f53a84</color>
+  <color name="composite_score_fine">#54d254</color>
+  <color name="composite_score_normal">#e0ec30</color>
+  <color name="composite_score_poor">#f53a84</color>
+  <color name="aid_record_list_pressed">#7fffffff</color>
+
+  <!-- MainActivity -->
+  <color name="main_tab_text">@color/page_common_text</color>
+  <color name="main_tab_text_checked">#51a438</color>
+
+    <!-- composite item :start -->
+  <color name="composite_socre_item_text">#afafaf</color>
+  <color name="composite_socre_item_state_text">#afafaf</color>
+  <color name="composite_socre_item_suggest_text">#333333</color>
+ 
+  <!-- 单项检测项目分数面板颜色 -->
+  <!-- 外圆颜色 -->
+  <color name="item_score_board_out_circle">#EFEFEF</color>
+  <!-- 圆环颜色 -->
+  <color name="item_score_board_ring_circle">#C8C8C8</color>
+  <!-- 内圆颜色 -->
+  <color name="item_score_board_inner_circle">#ffffff</color>
+  <!-- composite item :end -->
+
+  <!-- user identity list -->
+  <color name="border_list_identity">#BDDABB</color>
+  <color name="list_identitiy">#f6fbf6</color>
+  <color name="list_item_identitiy_number">#f6fbf6</color>
+  <color name="list_item_pressed_identity_number">#ecf3ec</color>
+  <color name="details_item_nav_disable">#c0c0c0</color>
+
+  <!-- set fragment -->
+  <color name="set_item_pressed">#ecfaf0</color>
+  <color name="green_title_background">#7ccb50</color>
+
+  <color name="start_page_text">#60de3e</color>
+</resources>

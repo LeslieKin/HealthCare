@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent" >
+
+
+  <project.healthcare.phone.ui.widget.StopScrollViewPage
+    android:id="@+id/main_viewpager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+
+  <RadioGroup
+    android:id="@+id/main_tab"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/bg_main_tab"
+    android:gravity="bottom"
+    android:orientation="horizontal" >
+    <!--android:background="@drawable/bg_main_tab"-->
+
+    <!-- 概况 -->
+
+    <RadioButton
+        android:id="@+id/nav_survey"
+        style="@style/main_tab"
+        android:checked="true"
+        android:drawableTop="@drawable/icon_details_selector"
+        android:text="@string/survey" />
+
+    <!-- 体检 -->
+
+    <RadioButton
+      android:id="@+id/nav_detect"
+      style="@style/main_tab"
+      android:drawableTop="@drawable/icon_detect_selector"
+      android:text="@string/detect" />
+
+    <!-- 急救 -->
+
+    <RadioButton
+      android:id="@+id/nav_aid"
+      style="@style/main_tab"
+      android:drawableTop="@drawable/icon_aid_selector"
+      android:text="@string/aid" />
+    
+<!--     头像
+
+    <FrameLayout
+      android:id="@+id/member_phone"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1" /> -->
+
+    <!-- 问答 -->
+
+    <RadioButton
+        android:id="@+id/nav_question"
+        style="@style/main_tab"
+        android:drawableTop="@drawable/icon_question_selector"
+        android:text="@string/question" />
+
+    <!-- 设置 -->
+
+    <RadioButton
+        android:id="@+id/nav_set"
+        style="@style/main_tab"
+        android:drawableTop="@drawable/icon_set_selector"
+        android:text="@string/set" />
+  </RadioGroup>
+
+  <LinearLayout
+    android:id="@+id/center_line"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:orientation="vertical" />
+
+  <ImageView
+    android:id="@+id/icon_red_point"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/icon_red_point"
+    android:layout_alignParentBottom="true"
+    android:layout_toRightOf="@+id/center_line"
+    android:layout_marginBottom="42dp"
+    android:layout_marginLeft="7dp"
+    android:visibility="gone"
+    android:contentDescription="@string/app_name" />
+
+<!--   <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:layout_margin="@dimen/margin_main_tab_member_photo" >
+
+    底部栏中间图片背景按钮
+
+    <ImageView
+      android:id="@+id/imageview_bg_member_image"
+      android:layout_width="@dimen/width_height_bg_main_tab_member_photo"
+      android:layout_height="@dimen/width_height_bg_main_tab_member_photo"
+      android:layout_centerInParent="true"
+      android:contentDescription="@string/app_name" />
+
+    底部栏中间图片前景按钮
+
+    <ImageView
+      android:id="@+id/imageview_fg_member_image"
+      android:layout_width="@dimen/width_height_fg_main_tab_member_photo"
+      android:layout_height="@dimen/width_height_fg_main_tab_member_photo"
+      android:layout_centerInParent="true"
+      android:contentDescription="@string/app_name" />
+  </RelativeLayout> -->
+
+</RelativeLayout>

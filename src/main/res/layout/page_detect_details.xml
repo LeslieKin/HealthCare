@@ -1,0 +1,219 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical" >
+
+  <!-- 标题栏 -->
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_title_repeat" >
+
+    <Button
+      android:id="@+id/button_title_back"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@drawable/button_title_back_selector" />
+
+    <TextView
+      android:id="@+id/textview_title_name"
+      style="@style/text_title_common"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerInParent="true" />
+  </RelativeLayout>
+
+  <!-- 选择项目 -->
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_tips_bar" >
+
+    <Button
+      android:id="@+id/button_previous_page"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerVertical="true"
+      android:background="@drawable/button_details_item_left_arrow" />
+
+    <project.healthcare.phone.ui.widget.CustomHorizontalScrollView
+      android:id="@+id/horizontal_scrollview"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_centerVertical="true"
+      android:layout_toLeftOf="@+id/button_next_page"
+      android:layout_toRightOf="@+id/button_previous_page"
+      android:overScrollMode="never"
+      android:scrollbars="none" >
+
+      <!-- 存放单选项按钮 -->
+
+      <RadioGroup
+        android:id="@+id/radio_group_nav_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp" >
+
+        <!-- 血压 -->
+
+        <RadioButton
+          android:id="@+id/nav_blood_pressure_button"
+          style="@style/item_details_nav"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/blood_pressure" />
+
+        <!-- 心率 -->
+
+        <RadioButton
+          android:id="@+id/nav_heart_rate_button"
+          style="@style/item_details_nav"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/heart_rate" />
+
+        <!-- 血氧 -->
+
+        <RadioButton
+          android:id="@+id/nav_blood_oxygen_button"
+          style="@style/item_details_nav"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/blood_oxygen" />
+
+        <!-- 血糖 -->
+
+        <RadioButton
+          android:id="@+id/nav_blood_sugar_button"
+          style="@style/item_details_nav"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:enabled="true"
+          android:text="@string/blood_sugar" />
+
+        <!-- 体温 -->
+
+        <RadioButton
+          android:id="@+id/nav_temperature_button"
+          style="@style/item_details_nav"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/temp" />
+
+        <!-- 体重 -->
+
+        <RadioButton
+          android:id="@+id/nav_weight_button"
+          style="@style/item_details_nav"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:enabled="true"
+          android:text="@string/weight" />
+      </RadioGroup>
+    </project.healthcare.phone.ui.widget.CustomHorizontalScrollView>
+
+    <Button
+      android:id="@+id/button_next_page"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentRight="true"
+      android:layout_centerVertical="true"
+      android:background="@drawable/button_details_item_right_arrow" />
+  </RelativeLayout>
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:scrollbars="none"
+      android:fillViewport="true" >
+  
+  <LinearLayout
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:orientation="vertical" >
+      
+    <LinearLayout
+        android:id="@+id/detail_chart_container"
+        android:layout_width="match_parent"
+        android:layout_height="350dp" >
+
+    	<!-- 详细图表 -->
+    	<project.healthcare.phone.ui.widget.DetectDetailChartView
+      		android:id="@+id/detail_chart"
+      		android:layout_width="match_parent"
+      		android:layout_height="match_parent" />
+    	
+  	</LinearLayout>
+
+  <LinearLayout
+      android:id="@+id/detail_score"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@android:color/white"
+      android:orientation="horizontal"
+      android:padding="10dp"
+      android:visibility="visible" >
+
+    <!-- 分数方块 -->
+    <RelativeLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginRight="10dp"
+      android:background="@drawable/bg_details_item_score" >
+
+      <TextView
+        android:id="@+id/details_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="52sp"
+        android:textStyle="bold" />
+
+      <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fg_details_item_score" />
+    </RelativeLayout>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical" >
+
+      <!-- 结果 -->
+      <TextView
+        android:id="@+id/details_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="@dimen/ts_details_result" />
+
+      <!-- 描述 -->
+      <TextView
+        android:id="@+id/details_result_describute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/details_result_describute"
+        android:textColor="@color/page_main_text" />
+
+      <!-- 建议 -->
+      <TextView
+        android:id="@+id/details_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/details_comment"
+        android:textColor="@color/page_common_text" />
+      
+    </LinearLayout>
+    
+  </LinearLayout>
+      
+  </LinearLayout>
+  
+  </ScrollView>
+
+</LinearLayout>

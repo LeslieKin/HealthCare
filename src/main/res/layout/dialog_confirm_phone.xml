@@ -1,0 +1,57 @@
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:gravity="center_horizontal"
+  android:background="@drawable/bg_dialog_confirm"
+  android:orientation="vertical" >
+
+  <!-- 验证发送手机号码对话框标题 -->
+  <TextView 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/top_margin_dialog_text_validate_phone_number"
+    android:gravity="center"
+    style="@style/text_content_common"
+    android:textSize="@dimen/ts_dialog_confirm_content"
+    android:text="@string/validate_phone_number" />
+
+  <!-- 验证的手机号码 -->
+  <TextView android:id="@+id/textview_phone"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding_dialog_text_phone_number"
+    style="@style/text_content_common"
+    android:textSize="@dimen/ts_dialog_confirm_content"
+    android:textStyle="bold" />
+
+  <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/v_padding_dialog_button"
+    android:paddingBottom="@dimen/h_padding_dialog_button"
+    android:paddingLeft="@dimen/v_padding_dialog_button"
+    android:paddingRight="@dimen/h_padding_dialog_button"
+    android:orientation="horizontal" >
+
+    <!-- 对话框取消按钮 -->
+    <Button android:id="@+id/button_cancel"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:layout_marginRight="@dimen/v_padding_dialog_button"
+      android:background="@drawable/button_dialog_cancel_selector"
+      android:text="@string/cancel"
+      android:textSize="@dimen/ts_dialog_confirm_button"
+      android:textColor="@color/page_common_text" />
+
+    <!-- 对话框确认按钮 -->
+    <Button android:id="@+id/button_confirm"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:background="@drawable/button_dialog_confirm_selector"
+      android:text="@string/confirm"
+      android:textSize="@dimen/ts_dialog_confirm_button"
+      android:textColor="@android:color/white" />
+  </LinearLayout>
+</LinearLayout>

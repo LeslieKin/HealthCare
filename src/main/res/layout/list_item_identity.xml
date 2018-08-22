@@ -1,0 +1,16 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content" >
+
+  <!-- 身份证号 -->
+  <TextView android:id="@+id/textview_item_identity"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/heigh_item_identity"
+    style="@style/edit_text_common"
+    android:drawableLeft="@drawable/icon_user"
+    android:background="@drawable/bg_list_item_identity_number" />
+
+  <!-- 快捷删除按钮 -->
+  <include layout="@layout/include_button_fast_delete"
+    android:visibility="visible" />
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:state_checked="true" android:drawable="@drawable/icon_survey_checked"></item>
+  <item android:state_focused="true" android:drawable="@drawable/icon_survey_checked"></item>
+  <item android:drawable="@drawable/icon_survey"></item>
+</selector>

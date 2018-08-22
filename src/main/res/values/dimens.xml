@@ -1,0 +1,221 @@
+ 
+<resources>
+    <dimen name="v_padding_list_nav_item">12dp</dimen>
+    <dimen name="ts_nav_title">48sp</dimen>
+  <dimen name="margin_grid_frame">16dp</dimen>
+  <dimen name="inner_margin_grid_frame">8dp</dimen>
+  <dimen name="ts_nav_button">18sp</dimen>
+  <!-- Default screen margins, per the Android Design guidelines. -->
+  <dimen name="activity_horizontal_margin">16dp</dimen>
+  <dimen name="activity_vertical_margin">16dp</dimen>
+  <dimen name="h_padding_activity_common">15dp</dimen>
+  <dimen name="v_padding_activity_common">12dp</dimen>
+
+  <dimen name="v_padding_fragment">10dp</dimen>
+
+  <dimen name="bottom_padding_shadow">5dp</dimen>
+  <dimen name="width_nav_button">180dp</dimen>
+  <dimen name="ts_title_common">20sp</dimen>
+  <dimen name="ts_tips">12sp</dimen>
+
+  <!-- Main Activity -->
+  <dimen name="ts_main_tab">12sp</dimen>
+  <dimen name="top_padding_main_tab">6sp</dimen>
+  <dimen name="bottom_padding_main_tab">8dp</dimen>
+  <dimen name="margin_main_tab_member_photo">2dp</dimen>
+  <dimen name="width_height_bg_main_tab_member_photo">70dp</dimen>
+  <dimen name="width_height_fg_main_tab_member_photo">60dp</dimen>
+
+  <!-- Login Activity -->
+  <dimen name="h_padding_button_login_by_phone">7dp</dimen>
+  <dimen name="h_padding_icon_project">30dp</dimen>
+  <dimen name="h_padding_exit_text">18dp</dimen>
+  <dimen name="drawable_padding_exit_text">13dp</dimen>
+  <dimen name="right_margin_button_delete_info">10dp</dimen>
+  <dimen name="left_padding_check_box">12dp</dimen>
+  <dimen name="v_padding_check_box">5dp</dimen>
+
+  <dimen name="ts_common_login" >18sp</dimen>
+  <dimen name="ts_button_login_by_phone" >17sp</dimen>
+  <dimen name="ts_big_button_login">19sp</dimen>
+
+  <dimen name="heigh_item_identity">48dp</dimen>
+  
+
+  <!-- Survey Activity -->
+  <dimen name="width_height_composite_score">130dp</dimen>
+  <dimen name="width_height_item_composite_score">50dp</dimen>
+
+  <dimen name="ts_composite_score_label">10sp</dimen>
+  <dimen name="ts_survey_advise">18sp</dimen>
+  <dimen name="ts_detect_now">16sp</dimen>
+  <dimen name="ts_survey_item_text">18sp</dimen>
+  <dimen name="inner_margin_composite_score_board">2dp</dimen>
+  <dimen name="top_padding_text_detect_now">4dp</dimen>
+  <dimen name="bottom_padding_text_detect_now">10dp</dimen>
+  <dimen name="right_margin_detect_button">6dp</dimen>
+
+  <!-- Dectect fragment -->
+  <dimen name="ts_tip_detect">20sp</dimen>
+  <dimen name="ts_detect_item_title">18sp</dimen>
+  <dimen name="top_margin_nav_button">60dp</dimen>
+  <!-- ### Detect Ready Page :start -->
+  <dimen name="ts_state_text">56sp</dimen>
+  <dimen name="ts_operation_title">25sp</dimen>
+  <dimen name="ts_operation_content">14sp</dimen>
+  <dimen name="ts_play_button">26sp</dimen>
+
+  <dimen name="h_padding_play_button">28dp</dimen>
+
+  <dimen name="left_margin_operation_info">40dp</dimen>
+  <dimen name="right_margin_play_button">28dp</dimen>
+  <dimen name="top_margin_state_content">40dp</dimen>
+  <dimen name="top_margin_operation_info">5dp</dimen>
+  <dimen name="bottom_margin_play_button">36dp</dimen>
+
+  <dimen name="height_state_frame">390dp</dimen>
+  <!-- ### Detect Ready Page :end -->
+
+
+  <!-- ### Detect Result Page :start -->
+  <dimen name="ts_result_state">26sp</dimen>
+  <dimen name="ts_result_comment">20sp</dimen>
+
+  <dimen name="top_margin_result_comment">16sp</dimen>
+  <!-- ### Detect Result Page :end -->
+  
+  
+   <!-- ### Composite Page :start -->
+<dimen name="ts_composite_score">52sp</dimen>
+  <dimen name="ts_composite_suggest">24sp</dimen>
+  <dimen name="ts_user_name">18sp</dimen>
+
+  <dimen name="h_padding_grid_board">4dp</dimen>
+
+  <dimen name="margin_grid_board">8dp</dimen>
+  <dimen name="margin_composite_suggest">25dp</dimen>
+
+  <dimen name="h_margin_info_card">12dp</dimen>
+  <dimen name="h_margin_composite_item">20dp</dimen>
+  <dimen name="v_margin_composite_chart">12dp</dimen>
+
+  <dimen name="top_margin_user_name">12dp</dimen>
+  <dimen name="top_margin_composite_score_board_label">6dp</dimen>
+
+  <dimen name="width_composite_score_board">160dp</dimen>
+
+  <dimen name="height_grid_board">243dp</dimen>
+  <dimen name="height_nav_button_shadow">15dp</dimen>
+  <dimen name="shadow_height_grid_board">2dp</dimen>
+  <!-- ### Composite Page :end -->
+  
+  
+   <!-- ### Record Page :start -->
+  <dimen name="ts_record_page_title">22sp</dimen>
+  <dimen name="ts_record_detect_item">20sp</dimen>
+  <dimen name="ts_measure_value">20sp</dimen>
+  <dimen name="ts_record_score">32sp</dimen>
+  <dimen name="ts_measure_time">15sp</dimen>
+  <dimen name="ts_measure_place">18sp</dimen>
+
+  <dimen name="drawable_padding_record_detect_item">4dp</dimen>
+
+  <dimen name="left_margin_record_item">72dp</dimen>
+
+  <dimen name="width_row_item_check_record">100dp</dimen>
+
+  <dimen name="min_height_record_page_title">72dp</dimen>
+  <!-- ### Record Page :end -->
+
+
+  <!-- ### Dialog Fragment :start -->
+
+  <dimen name="ts_dialog_title"  >36sp</dimen>
+  <dimen name="ts_dialog_content">34sp</dimen>
+  <dimen name="ts_dialog_button">28sp</dimen>
+
+  <dimen name="padding_dialog_button"  >12dp</dimen>
+
+  <dimen name="h_padding_dialog_title"  >14dp</dimen>
+  <dimen name="h_padding_dialog_content">14dp</dimen>
+  <dimen name="v_padding_dialog_title"  >14dp</dimen>
+  <dimen name="v_padding_dialog_content">24dp</dimen>
+
+  <dimen name="min_width_message_dialog">480dp</dimen>
+  <dimen name="min_height_message_dialog">180dp</dimen>
+  <!-- ### Dialog Fragment :end -->
+
+
+  <!-- ### Detect Item :start -->
+  <dimen name="ts_detect_item">26sp</dimen>
+
+  <dimen name="padding_detect_item">5dp</dimen>
+  <dimen name="drawable_padding_detect_item">8dp</dimen>
+  <!-- ### Detect Item :end -->
+  
+  <!-- Dialog Page Title :start -->
+  <dimen name="ts_dialog_page_title">20sp</dimen>
+
+  <dimen name="left_padding_dialog_page_title">16dp</dimen>
+  <dimen name="drawable_padding_dialog_page_title">8dp</dimen>
+
+  <dimen name="min_height_dialog_page_title">48dp</dimen>
+  <!-- Dialog Page Title :end -->
+  
+   <!-- ### Share Mode Page :start -->
+  <dimen name="padding_share_frame">24dp</dimen>
+
+  <dimen name="left_margin_share_button">12dp</dimen>
+
+  <dimen name="min_width_share_frame">682dp</dimen>
+  <!-- ### Share Mode Page :end -->
+
+  <!-- ### CompositeFragment item :start -->
+  <dimen name="margin_composite_item_fragment">1dp</dimen>
+
+  <dimen name="top_padding_composite_item">10dp</dimen>
+  <dimen name="v_padding_composite_item_state">6dp</dimen>
+
+  <dimen name="width_composite_item_score_board">110dp</dimen>
+
+  <dimen name="ts_composite_item_title">28sp</dimen>
+  <dimen name="ts_composite_item_state">20sp</dimen>
+
+  <!-- Loading Dialog -->
+  <dimen name="v_padding_dialog_loading"> 2dp</dimen>
+  <dimen name="ts_loading">16sp</dimen>
+
+  <!-- Confirm Dialog -->
+  <dimen name="width_dialog_confirm"  >280dp</dimen>
+  <dimen name="width_dialog_loading"  >200dp</dimen>
+  <dimen name="height_dialog_confirm" >190dp</dimen>
+  <dimen name="height_dialog_loading" >80dp</dimen>
+  <dimen name="ts_dialog_confirm_content">17sp</dimen>
+  <dimen name="ts_dialog_confirm_button">16sp</dimen>
+  <dimen name="v_padding_dialog_button">15dp</dimen>
+  <dimen name="h_padding_dialog_button">15dp</dimen>
+  <dimen name="top_margin_dialog_text_validate_phone_number">20dp</dimen>
+  <dimen name="padding_dialog_text_phone_number">9dp</dimen>
+
+  <!-- Send Vericode Fragment -->
+  <dimen name="ts_tip_fill_in_vericode">14sp</dimen>
+  <dimen name="ts_send_vericode_again_button">15sp</dimen>
+
+  <!-- login by phone -->
+  <dimen name="v_margin_button_next_step">10dp</dimen>
+  <dimen name="padding_label_user_info"  >6dp</dimen>
+  <dimen name="text_size_label_user_info">20dp</dimen>
+  <dimen name="margin_button_delete_user_info" >4dp</dimen>
+  
+  <!-- Detect Details -->
+  <dimen name="ts_details_result">18sp</dimen>
+  <dimen name="details_result_describute">17sp</dimen>
+  <dimen name="details_comment">16sp</dimen>
+
+  <!-- Aid Record -->
+  <dimen name="h_padding_aid_record_list">15dp</dimen>
+  <dimen name="v_padding_aid_record_list">8dp</dimen>
+  
+  <!-- setfragment -->
+  <dimen name="set_item_padding">12dp</dimen>
+</resources>

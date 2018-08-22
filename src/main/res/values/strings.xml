@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="tip_start_measuring"> 请按  "\"启动\"" 开始检测! </string>
+  <string name="start_measuring">启动检测</string>
+  <string name="app_name">微康</string>
+  <string name="survey">概况</string>
+  <string name="detect">体检</string>
+  <string name="check">检测</string>
+  <string name="question">问答</string>
+  <string name="aid">救助</string>
+  <string name="aid_place">救助定位</string>
+  <string name="set">设置</string>
+  <string name="identity">身份证号</string>
+  <string name="password">登录密码</string>
+  <string name="phone_number">手机号码</string>
+  <string name="text_default_total_comment">比较健康，继续保持体检！</string>
+  <string name="text_default_last_detect_time">最后一次体检时间 2013.10.10 11:30</string>
+  <string name="text_detect_now">立即体检</string>
+  <string name="composite_healthcare_score">综合健康指数</string>
+  <string name="select_detect">请选择以下项目</string>
+  <string name="network_failed">网络错误，请稍微再试！</string>
+  <string name="aid_record">救助记录</string>
+  <string name="composite_health_index">综合健康指数</string>
+
+  <string name="user_agreement">《微康用户注册协议》</string>
+  <string name="agree">同意</string>
+  <string name="next_step">下一步</string>
+  <string name="confirm">确认</string>
+  <string name="cancel">取消</string>
+  <string name="validate_phone_number">验证手机号码\n\n发送验证码短信到以下号码：</string>
+  <string name="register_success">恭喜您，已经注册成功！</string>
+
+  <string name="format_blood_pressure">血压综合得分%1$s分</string>
+  <string name="format_heart_rate">心率综合得分%1$s分</string>
+  <string name="format_blood_oxygen">血氧综合得分%1$s分</string>
+  <string name="format_weight">体重综合得分%1$s分</string>
+  <string name="format_blood_sugar">血糖综合得分%1$s分</string>
+  <string name="format_temperture">体温综合得分%1$s分</string>
+
+  <string name="text_login_by_phone">手机号登录</string>
+  <string name="login_by_identity">身份证登录</string>
+  <string name="digits_identity">1234567890xX</string>
+  <string name="digits_password">1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz_</string>
+
+  <string name="length_identity">18</string>
+  <string name="length_phone">11</string>
+  <string name="length_vericode">6</string>
+  <string name="max_length_password">12</string>
+  <string name="max_length_full_name">12</string>
+  <string name="min_length_password">6</string>
+
+  <string name="info_data_loading">数据加载中，请稍后…</string>
+  <string name="info_data_load_failed">数据加载失败</string>
+
+  <!-- detect types -->
+  <string name="blood_pressure">血压</string>
+  <string name="blood_sugar">血糖</string>
+  <string name="blood_oxygen">血氧</string>
+  <string name="heart_rate">心率</string>
+  <string name="temp">体温</string>
+  <string name="weight">体重</string>
+
+  <!-- page_detect types -->
+  <!--  <string name="page_blood_pressure">血压检测</string>
+<string name="page_blood_sugar">血糖检测</string>
+<string name="page_blood_oxygen">血氧测测</string>
+<string name="page_heart_rate">心率检测</string>
+<string name="page_temp">体温检测</string>
+<string name="page_weight">体重检测</string> -->
+
+  <!-- page_prepare_detect_step_tips  -->
+  <string name="page_tips_blood_pressure">准备血压检测,请按步骤操作!</string>
+  <string name="page_tips_blood_sugar">准备血糖检测,请按步骤操作!</string>
+  <string name="page_tips_blood_oxygen">准备血氧检测,请按步骤操作!</string>
+  <string name="page_tips_heart_rate">准备心率检测,请按步骤操作!</string>
+  <string name="page_tips_temp">准备体温检测,请按步骤操作!</string>
+  <string name="page_tips_weight">准备体重检测,请按步骤操作!</string>
+  <string name="prepare_detect_tips">准备检测,请按步骤操作!</string>
+
+
+  <!-- sub detect types -->
+  <string name="systolic">收缩压</string>
+  <string name="diastolic">舒张压</string>
+
+  <!-- suggest -->
+  <string name="suggest_systolic">收缩压:</string>
+  <string name="suggest_diastolic">舒张压:</string>
+  <string name="suggest_diet">饮食建议:</string>
+  <string name="suggest_sports">运动建议:</string>
+
+  <!-- default text -->
+  <string name="default_dialog_title">标题</string>
+  <string name="default_dialog_content">内容</string>
+  <string name="default_health_suggest">预防比治疗更为现实和重要。应有足量钙的摄入。消除危险因素和戒烟，避免酗酒、过多咖啡因摄入</string>
+  <!-- formats -->
+
+
+  <!-- states -->
+  <string name="state_connecting">正在连接\n请稍后...</string>
+  <string name="state_connect_success">连接成功</string>
+  <string name="state_connect_fail">连接失败</string>
+  <string name="state_measuring">正在检测…</string>
+  <string name="state_measure_fail">检测失败</string>
+
+  <string name="state_good">良好</string>
+  <string name="state_normal">一般</string>
+  <string name="state_pool">差</string>
+
+  <!-- Login Activity -->
+  <string name="remember_password">记住密码</string>
+  <string name="forget_password">忘记密码？</string>
+  <string name="login">登录</string>
+  <string name="register">注册</string>
+  <string name="register_tip">您还没有账户？立即注册</string>
+  <string name="info_password_error">密码错误</string>
+  <string name="no_register">该手机号尚未注册</string>
+
+  <string name="format_empty_error">%s不能为空</string>
+  <string name="format_min_length_error">%1$s长度不能少于%2$d位</string>
+  <string name="format_max_length_error">%1$s长度不能多于%2$d位</string>
+  <string name="format_format_error">%s格式错误</string>
+  <string name="format_min_option_error">请选择至少%2$d种%1$s</string>
+  <string name="format_max_option_error">请选择至多%2$d种%1$s</string>
+
+  <!-- Loading Dialog -->
+  <string name="data_loading">数据加载中&#8230;</string>
+  <string name="login_loading">正在登录&#8230;</string>
+  <string name="register_loading">正在注册&#8230;</string>
+
+  <!-- Send Vericode -->
+  <string name="send_vericode_again">重发验证码</string>
+  <string name="second_send_again">%1$s秒后重发</string>
+  <string name="fill_vericode">填写验证码</string>
+  <string name="format_fill_verticode">请输入手机 %1$s 收到的短信验证码</string>
+  <string name="input_phone">请输入手机号</string>
+  <string name="info_phone_already_reg">该手机号码已注册，请重新输入</string>
+  <string name="info_get_vericode_failed">获取验证码失败</string>
+
+  <!-- Register -->
+  <string name="fill_register_info">填写注册信息</string>
+  <string name="name">姓名</string>
+  <string name="confirm_password">确认密码</string>
+  <string name="different_password">两次密码输入不一致</string>
+
+  <string name="format_last_detect_time">最后一次体检时间 %1$s</string>
+  <string name="format_date">yyyy-MM-dd HH:mm</string>
+
+  <!-- SurveyFragment -->
+  <string name="health_state_good">身体健康良好</string>
+  <string name="health_state_sort">身体健康一般</string>
+  <string name="health_state_bad">身体健康较差</string>
+  <string name="default_health_state_no">无健康状况记录</string>
+
+  <!-- DetectDetails -->
+
+  <string name="recent_detect">最近体检</string>
+  <string name="format_current_blood_pressure">当前血压值:%1$s/%2$s mmHg</string>
+  <string name="format_current_heart_rate">当前心率值：%s bpm</string>
+  <string name="format_current_blood_oxygen">当前血氧值：%s %%</string>
+  <string name="format_current_blood_sugar">当前血糖值：%s </string>
+  <string name="format_current_blood_temp">当前体温值：%s  ℃</string>
+  <string name="format_current_blood_weight">当前体重值：%s kg</string>
+  <!-- DetectInfo -->
+  <string name="measure">检测</string>
+  <string name="restart_measuring">重新检测</string>
+  <string name="save_result">保存结果</string>
+  <string name="back">返回</string>
+  <string name="sample_video">演示动画</string>
+  <string name="play_sample_video">播放演示动画</string>
+
+  <!-- descriptions -->
+  <string name="close_button">关闭按钮</string>
+  <string name="expression_icon">表情图标</string>
+  <string name="user_photo">用户头像</string>
+
+
+  <!-- messages -->
+  <string name="msg_get_analyse_result_failed">获取分析结果失败</string>
+  <string name="msg_save_analyse_result_success">保存分析结果成功</string>
+  <string name="msg_save_analyse_result_failed">保存分析结果失败</string>
+  <string name="msg_under_sharing">正在分享，请稍侯…</string>
+  <string name="msg_share_success">分享成功</string>
+  <string name="msg_share_failed">分享失败</string>
+  <string name="msg_exit_confirm">是否确定退出应用？</string>
+  <string name="msg_warn">警告</string>
+
+
+  <!-- measure result -->
+  <string name="title_measure_result">检测结果</string>
+  <string name="label_measure_value">测量值</string>
+  <string name="label_measure_score">得分</string>
+  <string name="label_measure_state">状态</string>
+  <string name="label_measure_suggest">建议</string>
+  <string name="mark_equal">：</string>
+  <string name="default_measure_value">请稍候</string>
+  <string name="default_measure_score">-请稍候-</string>
+  <string name="default_measure_state">请稍候</string>
+  <string name="default_measure_suggest">- -</string>
+  <string name="detect_measure_result_suggest">好吃好喝好睡觉,多玩多浪多微笑</string>
+
+  <string name="format_result_systolic_blood_pressure">收缩压：%1$.2f mmHg 舒张压：%2$.2f mmHg</string>
+  <string name="format_result_diastolic_blood_pressure">舒张压：%1$.2f mmHg 舒张压：%2$.2f mmHg</string>
+  <string name="label_measure_diet_suggest">饮食建议</string>
+  <string name="label_measure_sports_suggest">运动建议</string>
+  <string name="label_measure_suggest_two">测量建议 ：</string>
+  <string name="label_measure_score_two">测量得分 ：</string>
+  <string name="please_wait">请稍后---</string>
+
+  <string name="format_result_blood_sugar">血糖：%1$.2f mmol/L</string>
+  <string name="format_result_blood_oxygen">血氧：%1$.2f %%</string>
+  <string name="format_result_heart_rate">心率：%1$.2f bpm</string>
+  <string name="format_result_temp">体温：%1$.2f ℃</string>
+  <string name="format_result_weight">体重：%1$.2f kg</string>
+
+
+  <!-- aid -->
+  <string name="success_aid">发起救助成功</string>
+  <string name="click_aid_button">点击紧急呼叫图标，立即呼救！</string>
+  <string name="format_request_aid">%s 发出紧急救助，点击查看</string>
+  <string name="add_aid_contact">添加紧急呼叫联系人</string>
+  <string name="already_handle">已处理</string>
+  <string name="already_cancel">已取消</string>
+  <string name="format_request_aid_myself">我    发出紧急救助</string>
+  <string name="format_request_aid_no_myself">%s 发出紧急救助</string>
+  <string name="set_success">设置成功</string>
+  <string name="cancel_aid_success">取消紧急救助成功</string>
+  <string name="cancel_aid_failed">取消紧急救助失败</string>
+    <string name="handle_aid_success">处理紧急救助成功</string>
+  <string name="handle_aid_failed">理紧急救助失败</string>
+  <string name="request_aiding">正在发出紧急救助</string>
+
+
+  <!-- tips -->
+  <string name="tip_phone_error">手机格式错误</string>
+  <string name="tip_identity_error">身份证格式错误</string>
+  <string name="tip_user_not_exist">用户不存在</string>
+  <string name="tip_user_exist">用户已存在</string>
+  <string name="tip_access_forbit">您的帐号已冻结，请联系管理员</string>
+  <string name="tip_password_error">密码错误</string>
+  <string name="tip_server_error">服务器错误</string>
+  <string name="tip_network_error">网络异常</string>
+  <string name="tip_timeout">连接超时</string>
+  <string name="tip_log_in_failed">登录失败</string>
+  <string name="tip_phone_unregister">手机号码未注册</string>
+  <string name="tip_get_vericode_failed">获取验证码失败</string>
+
+
+  <!-- ### Operation Step Contents :start -->
+  <string name="operation_content_blood_pressure">1、挽起衣袖不分左右手
+    \n2、套入检测布套包紧手臂
+    \n3、点击右侧“启动检测”按钮
+    \n4、按下设备的“血压”按钮开始检测
+  </string>
+
+  <string name="operation_content_blood_sugar">1、启动血糖仪
+    \n2、将试纸放入血糖仪测量入口
+    \n3、用针扎破手指，流出1滴血液
+    \n4、手持血糖仪，让试纸吸取部分血液
+    \n5、点击右侧“启动检测按钮”，等待测量完成</string>
+
+  <string name="operation_content_blood_oxygen">1、启动测量仪
+    \n2、将手指末端放在心率-血氧测量器内
+    \n3、点击右侧“启动检测”按钮开始检测</string>
+
+  <string name="operation_content_heart_rate">1、启动测量仪
+    \n2、将手指末端放在心率-血氧测量器内
+    \n3、点击右侧“启动检测”按钮开始检测</string>
+
+  <string name="operation_content_temp">1、启动测量仪
+    \n2、将体温测量器放在腋下位置
+    \n3、测量仪显示测量温度
+    \n4、点击右侧“启动检测按钮”，等待测量完成</string>
+
+  <string name="operation_content_weight">暂无操作步骤</string>
+  <!-- ### Operation Step Contents :end -->
+
+
+  <!-- ### More Page Contents :start -->
+  <string name="about_us">关于我们</string>
+  <string name="instruction">使用说明</string>
+  <string name="service_terms">服务条款</string>
+  <string name="privacy">隐私政策</string>
+  <string name="logout">注销</string>
+  <string name="exit">退出</string>
+
+  <string name="content_about_us">　　深圳市微康科技有限公司(以下简称"微康")成立于2013年，专注社区基础性体检服务，为向中国百姓实现更方便快捷的健康服务而努力。
+    \n
+    \n　　微康网络医疗平台，由深圳大学科技部创新委，在市科技部大力支持下，独立自主开发的项目，包括但不限于产品或服务的全部内容及网站上的材料版权等知识产权，受法律保护。未经书面许可，任何及个人不得以任何方式或理由对上述产品、服务、信息、材料的任何部分进行使用、复制、修改、抄录、传播或与其他产品捆绑使用、销售。凡侵我们知识版权的，我们必依法追究其法律责任，特此郑重法律声明。
+    \n
+    \n地址：深圳大学粤海门广场实验室A座201
+    \n联系人：叶老师
+    \n联系电话：0755-26958860
+    \n电子邮箱：newphi@163.com
+    \n
+  </string>
+
+  <string name="content_instruction"> 微康医疗系统手机版使用说明\n　
+\n　1.	页面白色栏是导航栏，导航默认首页是“概况”选项，该页面包含用户在血压、心率、血氧、血糖、体温和体重共6个测量项目上的得分记录，点击得分可以查看对应测量项目的测量记录折线图，方便了解自己近期的健康走势。\n　
+\n　2.	点击导航栏“体检”可以导航到体检页面，该页面包含血压、心率、血氧、血糖、体温和体重共6个测量项目，每个测量项目里都有对应的具体操作步骤说明，请按照操作步骤完成测量。\n　
+\n　3.	点击导航栏“救助”可以导航到救助页面，在突发身体不适而周围没有其他人给予救助的时候，你可以使用这里的“紧急呼救”按钮，向你的紧急联系人发送紧急呼救信息（即你当前位置的定位信息），方便紧急联系人迅速地找到你。\n　
+\n　4.	点击导航栏“问答”可以导航到问答页面，在这里你可以随时发表关于健康的问题，向广大微康用户或者我们的专家团队征求答案。\n 
+\n　5.	点击导航栏“设置”可以导航到设置页面，在这里你可以查看“关于我们”、“使用说明”、“服务条款”、“隐私政策”的详细内容，也可以进行“注销”或者“退出”等帐号操作。
+</string>
+
+  <string name="user_agreement_content">　　本协议是您与微康医疗系统（简称“本系统”，网址：http://www.vkang.com）所有者（以下简称为“微康”）之间就微系统服务等相关事宜所订阅的契约，请仔细阅读本注册协议。
+    \n
+    \n　　当您勾选“同意《微康用户注册协议》”后，本协议即构成对双方均有约束力的法律文件。
+    \n
+    \n<b>第1条</b>  本系统服务条款的确认和接纳
+    \n
+    \n　1.1  本站的各项电子服务的所有权和运作权归微康所有。用户同意所有注册协议条款并完成注册程序，才能成为本系统的正式用户。用户确认：本协议条款是处理双方权利义务的契约，始终有效，法律另有强制性规定或双方另有特别约定的，依其规定。
+    \n
+    \n　1.2  用户点击同意本协议的，即视为用户确认自己具有享受本系统服务、购物等相应的权利能力和行为能力，能够独立承担法律责任。
+    \n
+    \n　1.3  如果您在18周岁以下，您只能在父母或监护人的监护参与下才能使用本系统。
+    \n
+    \n　1.4  微康保留在中华人民共和国大陆地区法施行之法律允许的范围内独自决定拒绝服务、关闭用户账户、清除或编辑内容或取消订单的权利。
+    \n
+    \n<b>第2条</b>  本系统服务
+    \n
+    \n　2.1  微康通过联网系统依法为用户提供体检信息等服务，用户在完全同意本协议及本系统规定的情况下，方有权使用本系统的相关服务。
+    \n
+    \n　2.2  用户必须自行准备如下设备和承担如下开支：
+    \n　　（1）上网设备，包括并不限于电脑或者其他上网终端、调制解调器及其他必备的上网装置；
+    \n　　（2）上网开支，包括并不限于网络接入费、上网设备租用费、手机流量费等。
+    \n
+  </string>
+
+  <string name="content_service_terms"><b>第1条</b> 本系统服务条款的确认和接纳
+    \n  
+    \n　1.1 本站的各项电子服务的所有权和运作权归微康所有。用户同意所有注册协议条款并完成注册程序，才能成为本系统的正式用户。用户确认：本协议条款是处理双方权利义务的契约，始终有效，法律另有强制性规定或双方另有特别约定的，依其规定。
+    \n
+    \n　1.2 用户点击同意本协议的，即视为用户确认自己具有享受本系统服务、购物等相应的权利能力和行为能力，能够独立承担法律责任。
+    \n
+    \n　1.3 如果您在18周岁以下，您只能在父母或监护人的监护参与下才能使用本系统。
+    \n
+    \n　1.4 微康保留在中华人民共和国大陆地区法施行之法律允许的范围内独自决定拒绝服务、关闭用户账户、清除或编辑内容或取消订单的权利。
+    \n
+    \n<b>第2条</b> 本系统服务
+    \n
+    \n　2.1 微康通过联网系统依法为用户提供体检信息等服务，用户在完全同意本协议及本系统规定的情况下，方有权使用本系统的相关服务。
+    \n
+    \n　2.2 用户必须自行准备如下设备和承担如下开支：
+    \n　　（1）上网设备，包括并不限于电脑或者其他上网终端、调制解调器及其他必备的上网装置；
+    \n　　（2）上网开支，包括并不限于网络接入费、上网设备租用费、手机流量费等。
+    \n
+  </string>
+    <!-- ### Operation Step Contents :start -->
+  <string name="operation_step">操作步骤:</string>
+
+  <string name="content_privacy">　　微康 承诺保护您的隐私。本隐私声明适用于 微康 通过 微康   帐户（以下称作“本服务”）收集的数据。它并不适用于 微康 的其他联机或脱机网站、产品或服务收集的数据。
+    \n
+    \n<b>简介</b>
+    \n　　本服务是一个个人健康平台，供您在线收集、编辑、添加、存储和共享健康信息。利用本服务，您可以控制自己的健康记录。您还可以与家人、朋友、健康护理专家、移动电话应用程序、健康相关设备和在线工具共享您的健康信息。
+    \n
+    \n　　您可以在一个   帐户中存储其他人（如您的家人）的健康信息。您应该在您的帐户的不同健康记录中存储和访问每个人的信息。
+    \n　　您可以选择与能够连接本服务以使用、编辑您的健康记录以及向其中添加内容的不同程序和系统（以下称作“程序”）共享信息。程序可帮助您管理信息和查找相关健康信息。
+    \n　　您可以选择与以下对象共享特定信息（或所有信息）：
+    \n　　其他人（如朋友和家人）
+    \n　　程序（如向您的健康记录添加数据的程序、将信息提供给健康护理提供方的程序或使用您的部分健康记录来向您提供有关管理您的健康状况的信息的程序），请阅读针对本服务的服务协议和行为准则。
+    \n
+    \n<b>个人信息的收集</b>
+    \n　　本服务将要求您输入标识符和密码来进行登录。本服务目前接受 微康 帐户凭据、Facebook 登录凭据或来自某些提供商的 OpenID。微康 不发放 OpenID 或 Facebook 凭据，也不认可任何第三方凭据提供方。在您选择对本服务使用 Facebook 登录凭据或 OpenID 之前，建议您对颁发机构提供的安全和隐私方面的承诺进行评估，以确定它们是否适合您的   帐户。
+    \n
+    \n　　微康 帐户 是一项服务，允许您登录到 微康 以及精选的 微康 合作伙伴的产品、网站和服务。如果您不使用 Facebook 或 OpenID 凭据，并且还没有 微康 帐户，我们将在您开设   帐户的同时为您创建一个 微康 帐户。为了创建 微康 帐户，  会向 微康 帐户系统发送有关您的某些信息（但不是健康信息）。微康 帐户的使用受 http://go.微康.com/fwlink/?LinkId=151668 上列出的隐私声明的约束。当您使用 微康 帐户登录到某个网站或服务时，微康 将收集某些信息以代表该网站或服务验证您的身份，从而使您免受恶意 微康 帐户使用的侵害并保护 微康 帐户服务的效率和安全性。我们还会向您使用 微康 帐户登录到的网站或服务发送某些信息。
+    \n
+    \n　　若要查看有关 微康 帐户的其他详细信息（包括如何使用 微康 帐户、如何编辑帐户信息以及我们如何收集和使用与 微康 帐户有关的信息），请阅读 http://go.微康.com/fwlink/?LinkId=151668 上的 微康 帐户详细信息。
+    \n
+    \n　　当您首次登录本服务时，将要求您创建一个   帐户。若要创建   帐户，必须提供个人信息，如姓名、出生日期、电子邮件地址、邮政编码和国家/地区。根据您使用的功能，可能还会要求您为相应的功能（如创建急诊档案或健身目标）提供其他信息。
+    \n　　我们将使用您在创建   帐户时提供的电子邮件地址进行以下操作：向您发送请求您验证电子邮件地址的电子邮件，包含您通过本服务发送的共享邀请，以及发送本服务的通知（如告知可将信息添加到您的   记录的电子邮件通知）。如程序的隐私声明中所述，您授权的程序也可能会使用您的电子邮件地址。
+    \n
+    \n　　帐户允许您管理一个或多个健康记录，如您为自己或家庭成员创建的健康记录。您可选择要存储在记录中的信息。可存储在记录中的信息的类型的示例包括：
+    \n　　健身相关活动，如有氧运动
+    \n　　测量结果，如血糖和血压
+    \n　　出院摘要
+    \n　　检验结果
+    \n　　药物
+    \n　　健康历史记录
+    \n
+    \n　　您可以使用程序将各种健康信息输入记录中。您可以授予程序权限在记录中查看、添加、修改和/或删除信息。某些程序会自行存储其访问的信息的副本。当本服务要求您授予程序访问权限时，本服务将提供指向每个程序的隐私声明的链接。请阅读隐私声明中的以下信息：程序可能使用、存储和传输您的信息的位置和方式，程序可能收集的其他信息，您可查看、编辑和删除程序所保留的信息的方式，以及您可能具有的其他选择，等等。您还可以存储文件，并可以在登录到本服务帐户时直接添加或编辑某些信息。
+    \n
+  </string>
+
+  <string name="click_again">再按一次返回键退出应用</string>
+  <string name="no_contact">没有可绑定的联系人</string>
+  <string name="app_name_main">微康手机版</string>
+</resources>

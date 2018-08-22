@@ -1,0 +1,76 @@
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical" >
+
+  <!-- 标题栏  -->
+  <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_title_repeat" >
+
+    <Button android:id="@+id/button_title_back"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@drawable/button_title_back_selector" />
+  
+    <TextView android:id="@+id/textview_title_name"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerInParent="true"
+      android:text="@string/fill_vericode"
+      style="@style/text_title_common" />
+
+  </RelativeLayout>
+
+  <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/page_login" >
+
+    <!-- 短信验证码输入文本提示 -->
+    <TextView android:id="@+id/textview_tips_fill_in_vericode"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      style="@style/text_content_common"
+      android:textSize="@dimen/ts_tip_fill_in_vericode" />
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:paddingTop="@dimen/v_padding_activity_common"
+      android:paddingBottom="@dimen/v_padding_activity_common"
+      android:orientation="horizontal" >
+
+      <!-- 验证码编辑栏 -->
+      <EditText android:id="@+id/edittext_vericode"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.5"
+        android:paddingLeft="@dimen/h_padding_exit_text"
+        android:layout_marginRight="@dimen/h_padding_exit_text"
+        style="@style/text_content_common"
+        android:maxLength="@string/length_vericode"
+        android:inputType="number"
+        android:background="@drawable/bg_frame_edit_text_info" />
+
+      <!-- 重发验证码按钮 -->
+      <Button android:id="@+id/button_send_vericode_again"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        style="@style/text_content_common"
+        android:textSize="@dimen/ts_send_vericode_again_button"
+        android:background="@drawable/button_send_vericode_again_selector"
+        android:text="@string/send_vericode_again" />
+    </LinearLayout>
+
+    <!-- 下一步按钮 -->
+    <Button android:id="@+id/button_next_step"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      style="@style/button_big_sign_in"
+      android:enabled="false"
+      android:text="@string/next_step" />
+  </LinearLayout>
+</LinearLayout>

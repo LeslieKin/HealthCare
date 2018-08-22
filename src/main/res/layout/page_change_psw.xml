@@ -1,0 +1,74 @@
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical" >
+
+  <!-- 标题栏  -->
+  <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_title_repeat" >
+
+    <Button android:id="@+id/button_title_back"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@drawable/button_title_back_selector" />
+  
+    <TextView android:id="@+id/textview_title_name"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerInParent="true"
+      android:text="修改密码"
+      style="@style/text_title_common" />
+
+  </RelativeLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/page_login" >
+
+    <!-- 登录密码 -->
+    <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="@dimen/v_padding_activity_common" >
+
+      <EditText android:id="@+id/edittext_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/edit_text_common"
+        android:hint="新密码"
+        android:drawableLeft="@drawable/icon_password"
+        android:background="@drawable/bg_frame_edit_text_info" />
+
+      <include layout="@layout/include_button_fast_delete"
+        android:id="@+id/button_delete_password" />
+    </RelativeLayout>
+
+    <!-- 确认密码 -->
+    <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="@dimen/v_padding_activity_common" >
+
+      <EditText android:id="@+id/edittext_comfirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/edit_text_common"
+        android:hint="确认新密码"
+        android:drawableLeft="@drawable/icon_password"
+        android:background="@drawable/bg_frame_edit_text_info" />
+
+      <include layout="@layout/include_button_fast_delete"
+        android:id="@+id/button_delete_confirm_password" />
+    </RelativeLayout>
+
+    <!-- 确认提交注册请求按钮 -->
+    <Button android:id="@+id/button_confirm_changepsw"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      style="@style/button_big_sign_in"
+      android:text="确定" />
+  </LinearLayout>
+</LinearLayout>

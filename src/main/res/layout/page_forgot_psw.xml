@@ -1,0 +1,60 @@
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical" >
+
+  <!-- 标题栏  -->
+  <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_title_repeat" >
+
+    <Button android:id="@+id/button_title_back"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@drawable/button_title_back_selector" />
+  
+    <TextView android:id="@+id/textview_title_name"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerInParent="true"
+      android:text="手机验证"
+      style="@style/text_title_common" />
+
+  </RelativeLayout>
+
+  <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/page_login" >
+
+    <RelativeLayout 
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="12dip">
+
+      <!-- 手机号码编辑栏 -->
+      <EditText android:id="@+id/edittext_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/edit_text_common"
+        android:background="@drawable/bg_frame_edit_text_info"
+        android:drawableLeft="@drawable/icon_phone"
+        android:hint="需要修改密码的帐号"
+        android:inputType="phone"
+        android:maxLength="@string/length_phone" />
+
+      <!-- 快捷删除按钮 -->
+      <include layout="@layout/include_button_fast_delete" 
+        android:id="@+id/button_delete_phone_number"/>
+    </RelativeLayout>
+
+    <!-- 下一步按钮 -->
+    <Button android:id="@+id/button_next_step"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      style="@style/button_big_sign_in"
+      android:enabled="false"
+      android:text="@string/next_step" />
+  </LinearLayout>
+</LinearLayout>

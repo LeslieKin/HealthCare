@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/aid_record_container"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:background="@drawable/list_item_selector"
+  android:baselineAligned="false"
+  android:gravity="center_vertical"
+  android:orientation="horizontal"
+  android:paddingTop="@dimen/v_padding_aid_record_list"
+  android:paddingBottom="@dimen/v_padding_aid_record_list"
+  android:paddingLeft="@dimen/h_padding_aid_record_list"
+  android:paddingRight="@dimen/h_padding_aid_record_list" >
+
+  <LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <TextView
+      android:id="@+id/record_label"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="@color/page_main_text"
+      android:textSize="18sp" />
+
+    <TextView
+      android:id="@+id/record_address"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:singleLine="true"
+      android:textColor="@color/page_common_text"
+      android:textSize="14sp" />
+
+    <TextView
+      android:id="@+id/record_time"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="@color/page_common_text"
+      android:textSize="14sp" />
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <Button
+      android:id="@+id/cancle_aid_button"
+      android:layout_width="50dp"
+      android:layout_height="30dp"
+      android:background="@drawable/bg_rectange_green_button"
+      android:text="@string/cancel"
+      android:textSize="14sp"
+      android:layout_marginRight="5dp"
+      android:textColor="@android:color/white" />
+
+    <Button
+      android:id="@+id/handle_aid_button"
+      android:layout_width="50dp"
+      android:layout_height="30dp"
+      android:background="@drawable/bg_rectange_green_button"
+      android:text="@string/already_handle"
+      android:textSize="14sp"
+      android:textColor="@android:color/white" />
+
+    <TextView
+      android:id="@+id/already_handle_text"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/already_handle"
+      android:gravity="left"
+      android:visibility="gone" />
+
+    <TextView
+      android:id="@+id/already_cancel_text"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/already_cancel"
+      android:gravity="left"
+      android:visibility="gone" />
+  </LinearLayout>
+
+</LinearLayout>

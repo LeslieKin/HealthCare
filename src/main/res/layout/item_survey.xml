@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/item_survey"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:background="@drawable/bg_survey_item_selector"
+  android:baselineAligned="false"
+  android:orientation="horizontal" >
+
+  <LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="0.2"
+    android:gravity="center" >
+
+    <ImageView
+      android:id="@+id/icon_item"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:contentDescription="@string/app_name" />
+  </LinearLayout>
+
+  <!-- 项目分析结果 -->
+
+  <LinearLayout
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_weight="0.5"
+      android:gravity="center_vertical"
+      android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/item_survey_analysis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@drawable/text_color_main_text"
+        android:textSize="@dimen/ts_survey_item_text"/>
+
+    <TextView
+        android:id="@+id/item_survey_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@drawable/text_color_common_text"/>
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="0.23"
+    android:gravity="center" >
+
+    <RelativeLayout
+      android:layout_width="70dp"
+      android:layout_height="70dp"
+      android:background="@drawable/bg_item_composite_score_board"
+      android:gravity="center" >
+
+      <project.healthcare.phone.ui.widget.CompositeItemScoreBoard
+        android:id="@+id/item_composite_score_board"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    </RelativeLayout>
+  </LinearLayout>
+
+</LinearLayout>

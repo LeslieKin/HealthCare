@@ -1,0 +1,6 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+  <item android:state_enabled="false" android:drawable="@drawable/bt_save_detect_result_pressed"></item>
+  <item android:state_checked="true"  android:drawable="@drawable/bt_save_detect_result" ></item>
+  <item android:state_pressed="true"  android:drawable="@drawable/bt_save_detect_result" ></item>
+  <item android:drawable="@drawable/bt_save_detect_result"></item>
+</selector>

@@ -1,0 +1,36 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 14
+    buildToolsVersion '26.0.2'
+
+    aaptOptions.cruncherEnabled = false;
+    aaptOptions.useNewCruncher = false;
+
+    defaultConfig {
+        applicationId "project.healthcare.phone"
+        minSdkVersion 14
+        targetSdkVersion 18
+        versionCode="1"
+        versionName="1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile files('libs/app-base-v3-1.8.12.bluetooth.serialport-src.jar')
+    compile files('libs/BaiduLBS_Android.jar')
+    compile files('libs/bluetooth-client-0.0.1-release-src.jar')
+    compile files('libs/pushservice-5.2.0.12.jar')
+    compile files('libs/tab_control-v3-n-1.4.1-src.jar')
+    compile files('libs/utils-bluetooth-0.0.1-release-src.jar')
+    compile files('libs/lexchart-legend-src.jar')
+    compile files('libs/volley.jar')
+    compile 'com.android.support:support-v4:26.0.0-alpha1'
+}

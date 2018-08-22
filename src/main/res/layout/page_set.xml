@@ -1,0 +1,136 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/theme"
+  android:orientation="vertical" >
+
+  <!-- 标题栏 -->
+
+  <RelativeLayout
+    android:id="@+id/layout_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_main_title"
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/v_padding_fragment"
+    android:paddingRight="@dimen/v_padding_fragment" >
+
+    <TextView
+      android:id="@+id/textview_title_name"
+      style="@style/text_title_common"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:background="@drawable/button_set_item"
+      android:text="@string/set" />
+  </RelativeLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/v_padding_activity_common"
+    android:layout_marginLeft="@dimen/h_padding_activity_common"
+    android:layout_marginRight="@dimen/h_padding_activity_common"
+    android:layout_marginTop="@dimen/v_padding_activity_common"
+    android:background="@drawable/shape_rectangle"
+    android:orientation="vertical" >
+
+    <TextView
+      android:id="@+id/nav_about_us"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@drawable/button_set_item"
+      android:drawableRight="@drawable/ic_expand_arrow"
+      android:padding="@dimen/set_item_padding"
+      android:text="@string/about_us"
+      android:textColor="@color/page_main_text"
+      android:textSize="16sp" />
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="1px"
+      android:background="#c9c7c7" />
+
+    <TextView
+      android:id="@+id/nav_instruction"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@drawable/button_set_item"
+      android:drawableRight="@drawable/ic_expand_arrow"
+      android:padding="@dimen/set_item_padding"
+      android:text="@string/instruction"
+      android:textColor="@color/page_main_text"
+      android:textSize="16sp" />
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="1px"
+      android:background="#c9c7c7" />
+
+    <TextView
+      android:id="@+id/nav_service_terms"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@drawable/button_set_item"
+      android:drawableRight="@drawable/ic_expand_arrow"
+      android:padding="@dimen/set_item_padding"
+      android:text="@string/service_terms"
+      android:textColor="@color/page_main_text"
+      android:textSize="16sp" />
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="1px"
+      android:background="#c9c7c7" />
+
+    <TextView
+      android:id="@+id/nav_privacy"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@drawable/button_set_item"
+      android:drawableRight="@drawable/ic_expand_arrow"
+      android:padding="@dimen/set_item_padding"
+      android:text="@string/privacy"
+      android:textColor="@color/page_main_text"
+      android:textSize="16sp" />
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/v_padding_activity_common"
+    android:layout_marginLeft="@dimen/h_padding_activity_common"
+    android:layout_marginRight="@dimen/h_padding_activity_common"
+    android:layout_marginTop="@dimen/v_padding_activity_common"
+    android:background="@drawable/shape_rectangle"
+    android:orientation="vertical" >
+
+    <TextView
+      android:id="@+id/nav_logout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@drawable/button_set_item"
+      android:drawableRight="@drawable/ic_expand_arrow"
+      android:padding="@dimen/set_item_padding"
+      android:text="@string/logout"
+      android:textColor="@color/page_main_text"
+      android:textSize="16sp" />
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="1px"
+      android:background="#c9c7c7" />
+
+    <TextView
+      android:id="@+id/nav_exit"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@drawable/button_set_item"
+      android:drawableRight="@drawable/ic_expand_arrow"
+      android:padding="@dimen/set_item_padding"
+      android:text="@string/exit"
+      android:textColor="@color/page_main_text"
+      android:textSize="16sp" />
+  </LinearLayout>
+
+</LinearLayout>

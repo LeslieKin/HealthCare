@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <item name="weight_measure_type"  type="integer">1</item>
+  <item name="weight_measure_value" type="integer">3</item>
+  <item name="weight_measure_score" type="integer">1</item>
+  <item name="weight_measure_time"  type="integer">2</item>
+  <item name="weight_measure_place" type="integer">4</item>
+  
+</resources>
